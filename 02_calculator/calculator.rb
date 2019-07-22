@@ -22,7 +22,7 @@ def power (a, b)
   a**b
 end
 
-def factorial (a)
+def factorial1 (a)
   if a == 0
     return 0
   end
@@ -33,3 +33,13 @@ def factorial (a)
   end
   result
 end
+
+def factorial(num)
+  if num == 0
+    return 0
+  end
+  (1..num).to_a.inject { |acc, x| acc*x}
+end
+
+puts factorial(0)
+puts factorial(3)
