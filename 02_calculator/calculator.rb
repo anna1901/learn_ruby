@@ -40,6 +40,3 @@ def factorial(num)
   end
   (1..num).to_a.inject { |acc, x| acc*x}
 end
-
-puts factorial(0)
-puts factorial(3)
